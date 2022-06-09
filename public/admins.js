@@ -1,1 +1,1 @@
-export const admins = ['mihaildivulin@yandex.ru', 'kekek@gmail.com']
+export const admins = ['mihaildivulin@yandex.ru', 'kek@gmail.com']
