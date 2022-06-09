@@ -1,0 +1,25 @@
+.addMain{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+.addForm{
+    width: 95%;
+    min-width: 300px;
+}
+
+.addForm input {
+    margin-top: 20px;
+}
+
+.homeMain{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}

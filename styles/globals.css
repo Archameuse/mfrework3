@@ -1,0 +1,38 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(240, 240, 240);
+    font-family: Merriweather, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+a{
+    color: inherit;
+    text-decoration-line: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.__se__dashed{
+    border-style: dashed;
+}
+
+.__se__dotted{
+    border-style: dotted;
+}
+
+.__se__t-shadow{
+    text-shadow: 0 0 5px black;
+}
+
+blockquote{
+    border-left: solid 3px black;
+    padding-left: 30px !important;
+    background-color: rgba(128, 128, 128, 0.315);
+    opacity: 0.5;
+}

@@ -1,0 +1,1 @@
+export const admins = ['mihaildivulin@yandex.ru', 'kekek@gmail.com']

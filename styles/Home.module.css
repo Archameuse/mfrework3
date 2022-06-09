@@ -1,0 +1,52 @@
+.center{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.center .logo{
+  content: "";
+	position: absolute;
+	width: 80vw;
+  left: 50%;
+  top: 25%;
+  background-size: contain;
+  aspect-ratio: 16/5;
+  background-image: url(../public/mflogobig.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter: opacity(0.9);
+}
+
+.center video{
+  display: inline-block;
+  background-color: black;
+  box-shadow: 0px 0px 5px 2px black;
+  height: calc(100vh - 60px);
+  aspect-ratio: 16/9;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.center ul{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center ul li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  color: white;
+  text-shadow: 0 0 10px black;
+}

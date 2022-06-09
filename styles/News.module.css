@@ -1,0 +1,365 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid_wrap{
+
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card{
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  color: black;
+  margin-top: 15px;
+  background-color: white;
+  font-family: Open Sans,Tahoma,Verdana,sans-serif;
+  cursor: pointer;
+}
+
+.card:first-child{
+  margin-top: 30px;
+}
+
+.cardLeft{
+  height: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLeft .image{
+  width: 100%;
+  height: 100%;
+}
+
+.cardLeft .image .tags{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(192, 246, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.cardRight{
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+}
+
+.cardRight .top{
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardRight .top *{
+  height: 100%;
+  min-width: 100px;
+  margin: 0;
+}
+
+.cardRight .top .date{
+  opacity: 0.6;
+}
+
+.cardRight .top .author{
+  border-left: 1px solid gray;
+  color: black;
+}
+
+.cardRight .bottom{
+  max-height: 160px;
+  padding-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardRight .bottom .heading h1{
+  max-height: 80px;
+  font-weight: bolder;
+  font-size: 30px;
+  text-overflow:ellipsis;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden; 
+}
+
+.cardRight .bottom .text{
+  margin-top: 10px;
+}
+
+.cardRight .bottom .text p{
+  margin-top: 10px;
+  font-size: 15px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+} 
+
+.cardRight *{
+  position: relative;
+  z-index: 3;
+}
+
+.cardPhone{
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: black;
+  z-index: 0 !important;
+}
+
+.cardPhone *{
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.pseudoPhone{
+  content: "";
+  position: absolute !important;
+  height: 100% !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  border-radius: 0 !important;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.pseudoPC{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: green;
+}
+
+.paginationWrap{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
+.addMain{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.addForm{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  box-shadow: 0 0 5px 1px black;
+  padding: 20px;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.addForm .heading, .addForm .image, .addForm .tags, .addForm .descr{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.addForm .descr textarea{
+  resize: vertical;
+}
+
+.addForm div label{
+  display: block;
+  width: 100px;
+}
+
+.addForm div input, .addForm div textarea{
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.addForm .tags{
+  justify-content: space-evenly;
+  margin-left: 0;
+}
+
+.addForm .tags label{
+  width: fit-content;
+}
+
+.addForm .tags input{
+  margin: 0 !important;
+  margin-left: 20px !important;
+  width: fit-content !important;
+}
+
+.addForm .buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.addForm .buttons *{
+  width: 200px;
+  margin: 0;
+}
+
+.addForm .buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.articleMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  font-family: cuprum,sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow:  0 0 5px 1px black;
+  margin-bottom: 50px;
+}
+
+.article * {
+  margin: 0;
+  padding: 0;
+}
+
+.article .head{
+  font-family: cuprum,sans-serif;
+  color: whitesmoke;
+  background-color: #252525;
+  padding: 20px;
+  width: auto;
+}
+
+
+.article .head .top{
+  margin-bottom: 15px;
+}
+
+.article .head .top .left{
+  float: left;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.article .head .top .right{
+  float: right;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.article .head .top .tag{
+  float: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.article .head .top .time, .article .head .top .author{
+  color: #a9a9a9;
+}
+
+.article .head h1{
+  font-size: 38px;
+  font-weight: 400;
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.article .mainImage{
+  width: 100%;
+}
+
+.article .content{
+  font-family: open sans,Tahoma,Verdana,sans-serif;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 25px;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 35px;
+  font-size: 18px;
+  background-color: white;
+}
+
+.article .content img{
+  max-width: 100%;
+}
+
+.article .content ul{
+  list-style: disc !important;
+}
+
+.modalMain{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.219);
+  z-index: 100;
+}
+
+.modalMain .modalBody{
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  position: fixed;
+  z-index: 101;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow-y: scroll;
+}
+
+.modalMain .modalBody .close{
+  cursor: pointer;
+}

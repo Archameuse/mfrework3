@@ -1,0 +1,79 @@
+.body{
+  padding: 10px;
+}
+
+.body .cardsWrap{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 10px;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.body .cardsWrap .card{
+  width: 200px;
+  height: 300px;
+  background: grey;
+  border-radius: 5px;
+  background-image: url(../public/playercard.png);
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid white;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.card h1, .card h2, .card h3{
+  font-family: kelly slab;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  font-weight: 100;
+}
+
+.card h1{
+  font-size: 30px;
+}
+
+.card h2{
+  font-size: 20px;
+}
+
+.card h3{
+  font-size: 15px;
+}
+
+.container_season{
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.container_name{
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 2px rgba(0, 0, 0, 0.623);
+  height: 100px;
+}
+
+.container_stats{
+  color: white;
+  text-shadow: 0 0 3px black;
+  height: 60px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.container_stats *{
+  text-align: left !important;
+}
+
+
+.container_rank .role{
+  text-transform: uppercase;
+  text-decoration: underline;
+}

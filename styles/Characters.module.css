@@ -1,0 +1,181 @@
+
+.center{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: unset;
+}
+
+div.tavern{
+  display: grid;
+  width: 100%;
+  max-width: 600px;
+  row-gap: 14px;
+  padding-top: 10px;
+  grid-template-columns: repeat(auto-fill, 25%);
+  justify-content: space-evenly;
+  background-image: url(../public/Characters/tavernempty.png);
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.tavern img{
+  width: 90%;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+}
+
+.articleMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  font-family: cuprum,sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow:  0 0 5px 1px black;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.article * {
+  margin: 0;
+  padding: 0;
+}
+
+.article .head{
+  font-family: cuprum,sans-serif;
+  color: whitesmoke;
+  background-color: #252525;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.article .head h1{
+  font-size: 48px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.article .head .meta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.article .head .meta .role{
+  font-size: 30px;
+  text-shadow: 0 0 5px black;
+}
+
+.article .head .meta .difficulty{
+  height: 40px;
+  margin-left: 50px;
+}
+
+.article .mainImage{
+  width: 100%;
+}
+
+.article .content{
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 25px;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 80%;
+  min-width: 350px;
+  font-size: 20px;
+}
+
+.article .content ul{
+  list-style: disc !important;
+}
+
+.article .content img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.article .content .descr{
+  text-align: center;
+  border-bottom: solid rgba(0, 0, 0, 0.4) 2px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.article .content .abilityGif{
+  width: 100%;
+  aspect-ratio: 2/1;
+  position: relative;
+  overflow: hidden;
+}
+
+.article .content .abilityGif img{
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.article .content .abilityGif .abilityList{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+  color: white;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  text-align: center;
+}
+
+.abilityList .abilityName{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.abilityList .abilityDescr{
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.article .content .abilityGif .abilityList::-webkit-scrollbar {
+  display: none;
+}
+
+.article .content .abilityIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.article .content .abilityIcons .abilityIco{
+  width: 15%;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article .content .abilityIcons img{
+  cursor: pointer;
+}
+
+.article .content .talent{
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
