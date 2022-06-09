@@ -76,7 +76,7 @@ export default function Tournaments() {
     <TeamRegModal id={modalId} onclose={() => setShowModal(false)} opened={showModal} user={user}/>
     <Modal title={tournaments?.[bracketId]?.name} onClose={() => setShowBracket(false)} opened={showBracket}>
         <div style={{display: 'flex', flexDirection: 'column', marginTop: 20, textAlign: 'center'}}>
-        {tournaments?.[bracketId]?.TeamsSort.map((item, index) => (
+        {tournaments?.[bracketId]?.TeamsSort?.map((item, index) => (
             <Tooltip key={index} label={item[1].map((value) => value.name + ' ')}><h4 key={item[0]}>{item[0]}</h4></Tooltip>
         ))}
         </div>
