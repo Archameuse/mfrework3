@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <ContextProvider>
         <QueryClientProvider client={queryClient}>
           <Component {...pageProps} />
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         </QueryClientProvider>
       </ContextProvider>
     </SessionProvider>
