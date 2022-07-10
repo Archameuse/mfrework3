@@ -84,7 +84,7 @@ return(
                         <div className={styles.talent}>
                             <b>Особый талант:</b> <br/>
                             {character?.talent}
-                            <b>Уникальный талант:</b> <br/>
+                            <b>Альтернативный талант:</b> <br/>
                             {character?.altalent}
                         </div>
                     </div>
