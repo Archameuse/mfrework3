@@ -84,6 +84,8 @@ return(
                         <div className={styles.talent}>
                             <b>Особый талант:</b> <br/>
                             {character?.talent}
+                        </div>
+                        <div className={styles.talent}>
                             <b>Альтернативный талант:</b> <br/>
                             {character?.altalent}
                         </div>
